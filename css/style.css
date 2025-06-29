@@ -291,72 +291,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.footer {
-  background-color: var(--text-color);
-  color: white;
-  padding: 48px 16px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-}
-.footer h3 {
-  font-size: 1.125rem;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-.footer p,
-.footer li {
-  color: #ffff;
-  margin: 0 0 8px 0;
-  line-height: 1.5;
-}
-.footer a {
-  color: #ffff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.footer a:hover {
-  color: white;
-}
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer .social-icons {
-  display: flex;
-  gap: 16px;
-}
-.footer .social-icons img,
-.footer .social-icons svg {
-  width: 24px;
-  height: 24px;
-}
-.footer-bottom {
-  text-align: center;
-  margin-top: 48px;
-  color: #718096;
-}
-
-footer a img {
-  width: 150px;
-}
-
-footer p {
-  margin-bottom: 30px;
-}
-
-footer .media-sosial {
-  display: flex;
-  width: 130px;
-  margin: auto;
-  justify-content: space-around;
-}
-
-footer .media-sosial a img {
-  width: 20px;
-}
 
 /* Responsive */
 @media (max-width: 950px) {
@@ -413,24 +347,10 @@ footer .media-sosial a img {
     background-size: cover;
   }
 
-  section.about-2 h1 {
+  section.about-2 h1,
+  section.about h1 {
     text-align: center;
-  }
-
-  section.about-2 .gambar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    gap: 30px;
-    margin-top: 30px;
-  }
-
-  section.about-2 .gambar img {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    border-radius: 10px;
+    /* margin: 40px; */
   }
 
   /* section.about-2 .gambar img {
@@ -440,44 +360,37 @@ footer .media-sosial a img {
     display: flex;
     border-radius: 10px;
   } */
-
-  section.Product .paket .gambar {
-    gap: 10px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+  section.about-2 .informasi-melukat {
+    width: 97%;
+    justify-content: space-evenly;
   }
 
-  section.Product .container-product .paket h1 {
-    font-size: 13px;
+  section.about-2 .informasi-melukat div {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
   }
 
-  section.Product .paket .gambar img {
-    border-radius: 5px;
-    width: 150px;
-  }
-
-  section.Product .title-information h1,
-  .gallery h1 {
-    font-size: 1.5rem;
-    width: 90%;
+  section.Fasilitas .informasi-Fasilitas {
+    width: 97%;
     margin: auto;
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
   }
 
-  .no-wa {
-    position: fixed;
-    right: 90px;
-    top: 85%;
-  }
-
-  .no-wa img {
-    position: absolute;
-    width: 70px;
-    transition: all 0.2s;
-  }
-
-  .no-wa img:hover {
-    position: absolute;
-    width: 60px;
+  section.Fasilitas .informasi-Fasilitas div {
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid black;
   }
 }
 
